@@ -1,0 +1,20 @@
+{
+  "name": "graphql_poc01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toporek3112/GraphQL_PoC01.git"
+  },
+  "author": "Karol Topor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toporek3112/GraphQL_PoC01/issues"
+  },
+  "homepage": "https://github.com/toporek3112/GraphQL_PoC01#readme"
+}
