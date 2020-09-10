@@ -8,8 +8,6 @@ services:
       image: postgres
       container_name: postgres
       hostname: postgres
-      ports: 
-        - 5433:5432
       environment: 
           POSTGRES_PASSWORD: "postgres"
       volumes: 
