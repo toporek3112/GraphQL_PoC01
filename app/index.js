@@ -6,10 +6,10 @@ const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNon
 var knex = require('knex')({
     client: 'pg',
     connection: {
-        host: '127.0.0.1',
-        port: '5433',
-        user: 'postgres',
-        password: 'postgres',
+        host: process.env.POSTGRES_HOST,
+        port: process.env.POSTGRES_PORT,
+        user: process.env.POSTGRES_USER,
+        password: process.env.POSTGRES_PASSWORD,
         database: 'graphql_poc01'
     }
 });
