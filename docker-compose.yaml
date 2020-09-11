@@ -11,7 +11,7 @@ services:
       environment: 
           POSTGRES_PASSWORD: "postgres"
       volumes: 
-        - ./_data:/var/lib/postgresql/data
+        - /tmp/GraphQL_PoC01_data:/var/lib/postgresql/data
       
 
   ############################################### NODEJS Server ###############################################
