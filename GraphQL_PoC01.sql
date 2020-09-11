@@ -24,8 +24,6 @@ create table Person (
 	club VARCHAR(50)
 );
 
-
-
 create table Address (
 	uuid INT,
 	streetName VARCHAR(50),
@@ -36,7 +34,6 @@ create table Address (
 	statOrProvince VARCHAR(50),
 	Country VARCHAR(50)
 );
-
 
 insert into Person (uuid, valid_from, valid_to, fullName, firstName, lastName, title, salutation, IsCustomer, gender, placeOfBirth, countryOfBirth, nationality, martialStatus, birthDate, deathDate, formattedName, location, satus, club) values (1, '2022-05-04 05:28:34', '2022-12-14 12:15:06', 'Leonid Keer', 'Léana', 'Keer', null, 'III', true, 'Male', 'Smečno', 'Czech Republic', 'CZ', false, '2001-01-17', null, '790-73-5849', 50.1884422, false, 'Jamia');
 insert into Person (uuid, valid_from, valid_to, fullName, firstName, lastName, title, salutation, IsCustomer, gender, placeOfBirth, countryOfBirth, nationality, martialStatus, birthDate, deathDate, formattedName, location, satus, club) values (2, '2019-12-24 04:30:57', '2023-05-23 23:52:45', 'Chance Napolitano', 'Andréa', 'Napolitano', null, 'Sr', true, 'Male', 'Nowosielce-Gniewosz', 'Poland', 'PL', true, '1993-05-22', null, '871-10-3916', 49.5730119, true, 'Wordtune');
