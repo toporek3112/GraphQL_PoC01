@@ -12,8 +12,6 @@ services:
         - 5433:5432
       environment: 
           POSTGRES_PASSWORD: "postgres"
-      volumes: 
-        - ./_data:/var/lib/postgresql/data
       
 
   ############################################### NODEJS Server ###############################################
