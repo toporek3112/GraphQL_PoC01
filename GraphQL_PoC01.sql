@@ -1,6 +1,3 @@
-create Database graphql_poc01
-\c graphql_poc01
-
 create table Person (
 	uuid INT,
 	valid_from DATE,
