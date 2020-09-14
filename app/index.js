@@ -1,6 +1,6 @@
 const express = require('express')
 const { graphqlHTTP } = require('express-graphql');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLInt, GraphQLBoolean, GraphQLEnumType, GraphQLFloat } = require('graphql')
+const { GraphQLSchema, GraphQLObjectType, GraphQLString, GraphQLList, GraphQLNonNull, GraphQLInt, GraphQLEnumType, GraphQLFloat } = require('graphql')
 
 //Database connection to PostgreSQL
 var knex = require('knex')({
@@ -26,16 +26,16 @@ const PersonType = new GraphQLObjectType({
         lastname: { type: GraphQLNonNull(GraphQLString) },
         title: { type: GraphQLString },
         salutation: { type: GraphQLString },
-        iscustomer: { type: GraphQLNonNull(GraphQLBoolean) },
+        iscustomer: { type: GraphQLNonNull(GraphQLString) },
         gender: { type: GraphQLNonNull(new GraphQLEnumType({ name: 'Gender', values: { Male: { value: 'Male' }, Female: { value: 'Female' } } })) },
         placeofbirth: { type: GraphQLNonNull(GraphQLString) },
         countryofbirth: { type: GraphQLNonNull(GraphQLString) },
         nationality: { type: GraphQLNonNull(GraphQLString) },
-        martialstatus: { type: GraphQLNonNull(GraphQLBoolean) },
+        martialstatus: { type: GraphQLNonNull(GraphQLString) },
         birthdate: { type: GraphQLNonNull(GraphQLString) },
         formattedname: { type: GraphQLNonNull(GraphQLString) },
         location: { type: GraphQLNonNull(GraphQLFloat) },
-        status: { type: GraphQLNonNull(GraphQLBoolean) },
+        status: { type: GraphQLNonNull(GraphQLString) },
         club: { type: GraphQLNonNull(GraphQLString) },
         address: {
             type: AddressType,

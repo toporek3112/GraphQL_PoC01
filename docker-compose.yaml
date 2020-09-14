@@ -2,7 +2,7 @@ version: "3"
 
 services:
 
-  ############################################### NODEJS Server ###############################################
+  ############################################## PostgreSQL Server #############################################
 
   postgres:
       image: postgres
@@ -16,8 +16,8 @@ services:
   ############################################### NODEJS Server ###############################################
 
   nodeServer:
-    image: 311200/graphql-poc01
-    container_name: nodeServer
+    image: tasktrack.telekom.at/parma-poc-docker-local/graphql-poc01
+    container_name: nodeServer-01
     hostname: nodeServer
     ports: 
       - 5000:5000
